@@ -1,0 +1,150 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --neon: #00f2ff;
+    --dark: #050505;
+    --card: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark);
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at center, #001a1a 0%, #050505 100%);
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    padding: 40px 0;
+}
+
+/* Логотип */
+.logo {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 3rem;
+    color: var(--neon);
+    text-shadow: 0 0 20px rgba(0, 242, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+}
+
+.logo .material-symbols-outlined { font-size: 3.5rem; }
+
+.studio-tag {
+    text-align: center;
+    opacity: 0.7;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Кнопки */
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-btn {
+    background: var(--card);
+    border: 1px solid var(--neon);
+    padding: 18px;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-btn:hover {
+    background: var(--neon);
+    color: #000;
+    box-shadow: 0 0 30px var(--neon);
+    transform: scale(1.03);
+}
+
+/* Карточки */
+.info-section h2 {
+    color: var(--neon);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 20px;
+    border-left: 4px solid var(--neon);
+    backdrop-filter: blur(10px);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.pin-header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.pin-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.bios-hint {
+    color: #ffcc00;
+    font-style: italic;
+  }
