@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit-Os | CodeBreaker®</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="bg-canvas"></div> <div class="container">
+        <header>
+            <h1 class="logo">
+                <span class="material-symbols-outlined">memory</span> Bit-Os
+            </h1>
+            <p class="studio-tag">
+                <span class="material-symbols-outlined">verified</span> by CodeBreaker® [cite: 1]
+            </p>
+        </header>
+
+        <nav class="button-grid">
+            <button id="lang-btn" class="menu-btn">
+                <span class="material-symbols-outlined">translate</span>
+                <span class="btn-text" data-en="English" data-ru="На английский">На английский</span>
+            </button>
+
+            <a href="BitOS_Full.ino" class="menu-btn download" download="BitOS_Full.ino">
+                <span class="material-symbols-outlined">download_for_offline</span>
+                <span class="btn-text" data-en="Download Firmware" data-ru="Скачать прошивку">Скачать прошивку</span>
+            </a>
+
+            <a href="https://www.tiktok.com/@code_breaker8" target="_blank" class="menu-btn tiktok">
+                <span class="material-symbols-outlined">smart_display</span>
+                <span class="btn-text" data-en="My TikTok" data-ru="Мой ТикТок">Мой ТикТок</span>
+            </a>
+        </nav>
+
+        <section class="info-section">
+            <h2 data-en="Hardware" data-ru="Железо">
+                <span class="material-symbols-outlined">developer_board</span> Железо [cite: 1, 10]
+            </h2>
+            <div class="card">
+                <div class="item">
+                    <span class="material-symbols-outlined">microchip</span>
+                    <p><b>Контроллер:</b> ESP32 NodeMCU [cite: 10]</p>
+                </div>
+                <div class="item">
+                    <span class="material-symbols-outlined">screenshot_main</span>
+                    <p><b>Дисплей:</b> 0.96 OLED SSD1306 [cite: 1]</p>
+                </div>
+                
+                <p class="pin-header">
+                    <span class="material-symbols-outlined">settings_input_component</span> 
+                    <b>Пины кнопок:</b> 
+                </p>
+                <div class="pin-grid">
+                    <div class="pin-item"><span class="material-symbols-outlined">keyboard_arrow_up</span> S1: 13 [cite: 2]</div>
+                    <div class="pin-item"><span class="material-symbols-outlined">keyboard_arrow_down</span> S2: 12 [cite: 2]</div>
+                    <div class="pin-item"><span class="material-symbols-outlined">check_circle</span> S3: 14 [cite: 3]</div>
+                    <div class="pin-item"><span class="material-symbols-outlined">cancel</span> S4: 27 [cite: 3]</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2 data-en="Installation" data-ru="Установка">
+                <span class="material-symbols-outlined">description</span> Инструкция
+            </h2>
+            <div class="card instructions">
+                <div class="step">
+                    <span class="material-symbols-outlined">settings_suggest</span>
+                    <p>Откройте <b>Arduino IDE</b> и выберите плату <b>ESP32 Dev Module</b>.</p>
+                </div>
+                <div class="step">
+                    <span class="material-symbols-outlined">library_add</span>
+                    <p>Установите библиотеку <b>U8g2</b> для работы экрана и русского языка[cite: 7, 8].</p>
+                </div>
+                <div class="step">
+                    <span class="material-symbols-outlined">bolt</span>
+                    <p>Подключите плату и нажмите <b>"Загрузить"</b>.</p>
+                </div>
+                <div class="step bios-hint">
+                    <span class="material-symbols-outlined">lock_open</span>
+                    <p>В системе доступен секретный режим <b>BIOS</b>! [cite: 9, 10]</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+          </html>
